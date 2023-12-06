@@ -1,0 +1,60 @@
+﻿<Window x:Class="PokemonCatcherWPF.AdminPage.PokemonMovesEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokemonCatcherWPF.AdminPage"
+        mc:Ignorable="d"
+        Title="PokemonMovesEdit" Height="450" Width="800">
+    <Grid>
+        <Label Content="Create Pokemon Move" Margin="198,29,198,0" VerticalAlignment="Top" FontFamily="Dubai Medium" FontSize="40" Height="90"/>
+        <Label Content="Move Name" Margin="126,120,455,0" VerticalAlignment="Top" FontFamily="Dubai Medium" FontSize="20" Height="44"/>
+        <TextBox x:Name="txtMoveName" Margin="284,124,125,0" TextWrapping="Wrap" Opacity="0.5" FontFamily="Rockwell" FontSize="18" Height="35" VerticalAlignment="Top">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </TextBox.Resources>
+
+        </TextBox>
+        <Label Content="Damage" Margin="126,173,455,0" VerticalAlignment="Top" FontFamily="Dubai Medium" FontSize="20" Height="44"/>
+        <TextBox x:Name="txtDamage" Margin="284,178,125,0" TextWrapping="Wrap" Opacity="0.5" FontFamily="Rockwell" FontSize="18" Height="34" VerticalAlignment="Top">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Move Type" Margin="126,230,455,0" VerticalAlignment="Top" FontFamily="Dubai Medium" FontSize="20" Height="44"/>
+        <!--<TextBox x:Name="txtMoveType" Margin="284,235,125,0" TextWrapping="Wrap" Opacity="0.5" FontFamily="Rockwell" FontSize="18" Height="34" VerticalAlignment="Top">
+        <TextBox.Resources>
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="CornerRadius" Value="8"/>
+            </Style>
+        </TextBox.Resources>
+    </TextBox>-->
+        <ComboBox x:Name="cmbMoveType" Margin="284,235,125,0" Opacity="0.5" FontFamily="Rockwell" FontSize="18" Height="34" VerticalAlignment="Top" SelectionChanged="cmbMoveType_SelectionChanged">
+            <ComboBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>
+        <Label Content="Description" Margin="126,289,455,0" VerticalAlignment="Top" FontFamily="Dubai Medium" FontSize="20" Height="44"/>
+        <TextBox x:Name="txtDescription" Margin="284,294,125,0" TextWrapping="Wrap" Opacity="0.5" FontFamily="Rockwell" FontSize="18" Height="34" VerticalAlignment="Top">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Center" Margin="0,369,0,0" VerticalAlignment="Top" Width="548" Height="30" Click="btnEdit_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>
